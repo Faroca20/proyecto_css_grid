@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="estilos.css"> 
-    <title>Proyectop CSSGrid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+        colors: {
+        fondo:'#91b0b8',
+        fondo_card:'#ffffff',
+        fondo_boton1:'#b8e0e9',
+        fondo_boton2:'#081d29',
+        fondo_boton1:'#f1f1f1',    
+        fondo_boton2:'#fabe51',
+        texto_resaltado:'#bce2ea',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Proyectop CSSGrid</title>
     
 <!--Inicio Etiquetas HTML-->
 </head>
 
-<body>
-    <main>
-        <section class="card1">
+<body class="bg-fondo font-sans my-10 mx-5">
+    <main class="grid grid-cols-3 grid-rows-auto gap-5">
+        
+        <!--Inicia Card1-->
+        <section class="col-span-2 row-span-2 bg-fondo_card rounded-lg p-5">
             <p class="card1-texto-resaltado">Guider Galineas Otros</p>
             <div class="card1-texto">
                 <h1>River Creates strongs workplace culteres throungn connected teams</h1>
@@ -29,15 +48,19 @@
             </div>
         </section>
 
-        <section class="card2">
-            <img src="./Imagenes/card2.jpg" alt="card2">
+        <!--Inicia Card2-->
+        <section class="col-start-3 col-end-4 row-start-1 row-end-2">
+            <img class="rounded-lg w-full" src="./Imagenes/card2.jpg" alt="card2">
         </section>
 
-        <section class="card3">
-            <img src="./Imagenes/card3.jpg" alt="card3">
+        <!--Inicia Card3-->
+
+        <section class="col-start-3 col-end-4 row-start-2 row-end-3">
+            <img class="rounded-lg w-full" src="./Imagenes/card3.jpg" alt="card3">
         </section>
 
-        <section class="card4">
+        <!--Inicia Card4-->
+        <section class="col-start-1 col-end-2 row-start-3 row-end-4 rounded-lg bg-fondo_card">
             <p id="card4-texto-resaltado">Guider Brand Galineas</p>
             <div class="card4-texto">
                 <h1>Mocochome Logo</h1>
@@ -55,6 +78,8 @@
             </div>
 
         </section>
+
+        <!--Inicia Card5-->
 
         <section class="card5">
             <p class="card5-texto-boton">Guider Brand Galineas</p>
@@ -90,6 +115,8 @@
             </div>
             
         </section>
+
+        <!--Inicia Card6-->
 
         <section class="card6">
             <img src="./Imagenes/card6.jpg" alt="card6">

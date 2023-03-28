@@ -1,0 +1,248 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+        --color-fondo:#91b0b8;
+        --color-fondo-card:#ffffff;
+        --color-boton1:#b8e0e9;
+        --color-boton2:#081d29;
+        --color-fondo-boton1:#f1f1f1;    
+        --color-fondo-boton2:#fabe51;
+        --color-texto-resaltado:#bce2ea;
+    }
+    
+    body{
+        background-color: var(--color-fondo);
+        font-family: 'Times New Roman', Times, serif;
+        margin: 40px 40px 40px 40px;               
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 20px;    
+        
+    }
+
+    .card1{
+        grid-column:1/3;
+        grid-row: 1/3;
+        background-color: var(--color-fondo-card);
+        border-radius: 10px;
+        padding: 20px;                   
+    }
+
+    .card2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        border-radius: 10px;
+    }
+
+    .card3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        border-radius: 10px;
+    }
+
+    .card4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-radius: 10px;
+        background-color: var(--color-fondo-card);     
+        height: 515px;           
+    }
+
+    #card4-texto-resaltado{ 
+        width:30%;
+        text-align: center;
+        font-weight: bold;       
+        padding: 5px;    
+        margin:20px 0 20px 20px;
+        background-color: var(--color-texto-resaltado);
+        border-radius: 20px;        
+    }
+
+    .card4-texto{
+        display: flex;
+        gap: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card4-texto h1{
+        width: 50%;
+        font-size: 30px;
+    }
+
+    .card4-texto p{
+        width: 50%;
+    }
+
+    .card4-logos{
+        display:flex;
+        align-items: center;
+        height: 61%;        
+        margin-top: 42px;        
+    }
+
+    .card4-logo2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-boton2);
+        height: 100%;
+        border-radius: 200px 0 20px 200px;
+        width: 80%;
+    }
+
+    .card4-logos img{
+        width: 60%;
+        
+    }   
+    
+    .card4-logo1{
+        margin-left: 10px;
+        height: 10%;
+        text-align: center;
+    }
+    
+    .card5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border-radius: 10px;
+        background-color: var(--color-fondo-card);        
+    }
+
+    .card5-logos{
+        margin-top:  100px;
+        
+    }
+
+    .card5-texto-boton{
+        background-color: var(--color-boton1);
+        width: 160px;
+        margin-top: 25px;
+        margin-left: 30px;
+        border-radius: 10px;    
+        font-weight: bolder;    
+    }
+
+    .card5-texto-parrafo{
+       display: flex;
+       margin-top: 15px;
+       margin-left:  13px;  
+    }
+
+    .card5-texto-parrafo h1{
+        margin-left: 15px;
+        height: 25px;
+        width: 250px;
+    }
+
+    .card5-texto-parrafo p{
+        width: 250px;
+    }
+
+
+    .card6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        border-radius: 10px;        
+    }
+    
+    .card5-logo-uno{
+        display: flex;  
+        background-color:var(--color-fondo-boton1);
+        justify-content: space-between;              
+
+    }
+
+    .card5-logo-dos{
+        display: flex;
+        background-color: var(--color-fondo-boton2);
+        justify-content: space-between;  
+        
+    }  
+
+    .card5-logo-uno button{
+        background-color: var(--color-boton1);
+        border-radius: 200px 0 0 200px;
+        width: 350px;
+        height: 140px;
+        border: none;
+        
+    }
+
+    .card5-logo-dos button{
+        background-color: var(--color-boton2);
+        border-radius: 200px 0 0 200px;
+        width: 350px;
+        height: 145px;
+        border: none;
+    }
+
+   .card5-logo1-imagen{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card5-logo2-imagen{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card5-logo1-boton{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card5-logo2-boton{
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1-texto{
+        display:flex;
+        gap: 60px;             
+    }
+
+    .card1-texto-resaltado{
+        background-color: var(--color-fondo);
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .card1-logos{
+        display: flex;
+        gap: 200px;
+        margin-top: 20%;        
+    }
+
+    .card1-logos img {
+        width: 80%;     
+
+    }
+
+    .card1 p{
+        margin-bottom: 10px;        
+        
+    }
+
+    .card6 img{
+        height: 510px;
+        width: 480px;
+        border-radius: 15px;
+        
+    }
+
+    .card5 img{
+        width: 40%;
+    }
+
+    
